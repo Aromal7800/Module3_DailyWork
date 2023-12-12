@@ -6,6 +6,8 @@ using RestSharp;
 
 string baseUrl = "https://reqres.in/api/";
 var client=new RestClient(baseUrl);
+APIwithEx api =new APIwithEx();
+api.GetSingleUser();
 /*
 GetUser(client);
 CreateUser(client);
@@ -118,7 +120,7 @@ static void deleteUsers(RestClient client   )
     Console.WriteLine("Delete User Response");
     Console.WriteLine(deleteUserResponse.Content);
 }
-*/
+
 GetUsers(client);
 static void GetUsers(RestClient client)
 {
@@ -143,3 +145,4 @@ static void GetUsers(RestClient client)
     }
 
 }
+*/
